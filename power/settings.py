@@ -61,7 +61,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ORIGIN_WHITELIST = ('https://master.d3uboawzuu8f07.amplifyapp.com')
+CORS_ORIGIN_WHITELIST = ('https://master.d3uboawzuu8f07.amplifyapp.com/')
 
 ROOT_URLCONF = 'power.urls'
 
