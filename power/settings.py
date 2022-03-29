@@ -30,7 +30,7 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = True if env('ENV') == "development" else False
 
 # ALLOWED_HOSTS = ["localhost", "127.0.0.1", "power-moses.herokuapp.com", "master.d3uboawzuu8f07.amplifyapp.com", "https://master.d3uboawzuu8f07.amplifyapp.com"]
-ALLOWED_HOSTS = ["*"]
+
 
 
 # Application definition
@@ -61,6 +61,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'power.urls'
 # CORS_ALLOW_CREDENTIALS = True
+ALLOWED_HOSTS = ["*"]
 CORS_ALLOW_ALL_ORIGINS = True
 TEMPLATES = [
     {
