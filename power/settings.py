@@ -29,8 +29,13 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True if env('ENV') == "development" else False
 
-ALLOWED_HOSTS = ["*"]
+# ALLOWED_HOSTS = ["*"]
 # ALLOWED_HOSTS = ["localhost", "127.0.0.1", "power-moses.herokuapp.com", "master.d3uboawzuu8f07.amplifyapp.com"]
+
+
+ALLOWED_HOSTS=['master.d3uboawzuu8f07.amplifyapp.com']
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_WHITELIST = ('master.d3uboawzuu8f07.amplifyapp.com')
 
 
 # Application definition
@@ -150,8 +155,8 @@ JWT_MAX_AGE = 24 * 60 * 60
 
 # CORS
 CORS_ALLOW_CREDENTIALS = True
-CORS_ALLOW_ALL_ORIGINS = True
-CORS_ALLOWED_ORIGINS = ["*"]
+# CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ALLOWED_ORIGINS = ["*"]
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = "smtp.gmail.com"
