@@ -60,7 +60,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'power.urls'
-
+# CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_ALL_ORIGINS = True
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -150,8 +151,8 @@ JWT_MAX_AGE = 24 * 60 * 60
 
 # CORS
 # CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOW_CREDENTIALS = True
-CORS_ALLOW_ALL_ORIGINS = True
+
+
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = "smtp.gmail.com"
