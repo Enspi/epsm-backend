@@ -61,7 +61,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'power.urls'
 CORS_ALLOW_CREDENTIALS = True
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["https://master.d3uboawzuu8f07.amplifyapp.com/"]
 CORS_ALLOW_ALL_ORIGINS = True
 TEMPLATES = [
     {
