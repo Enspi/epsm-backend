@@ -85,11 +85,11 @@ WSGI_APPLICATION = 'power.wsgi.application'
 DATABASES = {
     'default': {
        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'power_database',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': ''
+        'NAME': 'powerdatabase',
+        'USER': 'admin',
+        'PASSWORD': 'powerdatabase',
+        'HOST': 'pdb.ccl1qx9wi1aq.us-west-2.rds.amazonaws.com',
+        'PORT': '3306'
     }
 }
 
