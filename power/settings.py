@@ -30,10 +30,12 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = True if env('ENV') == "development" else False
 
 # ALLOWED_HOSTS = ["localhost", "127.0.0.1", "power-moses.herokuapp.com", "master.d3uboawzuu8f07.amplifyapp.com", "https://master.d3uboawzuu8f07.amplifyapp.com"]
-
+CORS_ORIGIN_ALLOW_ALL=True
 
 
 # Application definition
+
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -59,10 +61,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CORS_ORIGIN_WHITELIST = ('https://master.d3uboawzuu8f07.amplifyapp.com')
+
 ROOT_URLCONF = 'power.urls'
-CORS_ALLOW_CREDENTIALS = True
-ALLOWED_HOSTS = ["https://master.d3uboawzuu8f07.amplifyapp.com/"]
-CORS_ALLOW_ALL_ORIGINS = True
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
