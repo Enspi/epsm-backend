@@ -62,7 +62,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'power.urls'
 
 CORS_ORIGIN_WHITELIST = [
-     'https://master.d3uboawzuu8f07.amplifyapp.com/'
+     'power-clients.herokuapp.com'
 ]
 
 TEMPLATES = [
