@@ -61,11 +61,11 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'power.urls'
 
 CORS_ORIGIN_ALLOW_ALL = True
-# CORS_ALLOWED_ORIGIN = ['https://master.d3uboawzuu8f07.amplifyapp.com/']
-# CORS_ORIGIN_WHITELIST = (
-# 'http://localhost:3000',  # for localhost (REACT Default)
-# 'https://master.d3uboawzuu8f07.amplifyapp.com/'
-# )
+CORS_ALLOWED_ORIGIN = ['https://master.d3uboawzuu8f07.amplifyapp.com/']
+CORS_ORIGIN_WHITELIST = (
+'http://localhost:3000',  # for localhost (REACT Default)
+'https://master.d3uboawzuu8f07.amplifyapp.com/'
+)
 
 TEMPLATES = [
     {
