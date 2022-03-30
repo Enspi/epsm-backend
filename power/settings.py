@@ -29,7 +29,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True if env('ENV') == "development" else False
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "power-moses.herokuapp.com", "master.d3uboawzuu8f07.amplifyapp.com"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "power-clients.herokuapp.com", "master.d3uboawzuu8f07.amplifyapp.com"]
 
 
 # Application definition
