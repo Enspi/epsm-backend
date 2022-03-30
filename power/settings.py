@@ -29,10 +29,10 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True if env('ENV') == "development" else False
 
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "power-moses.herokuapp.com", "master.d3uboawzuu8f07.amplifyapp.com"]
+
 
 # Application definition
-
-
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -41,29 +41,24 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
     'corsheaders',
+    'rest_framework',
     'authentication',
     'app'
 ]
 
 MIDDLEWARE = [
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'corsheaders.middleware.CorsPostCsrfMiddleware',
     'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
 ROOT_URLCONF = 'power.urls'
-
-CORS_ORIGIN_WHITELIST = [
-     'power-clients.herokuapp.com'
-]
 
 TEMPLATES = [
     {
@@ -153,9 +148,8 @@ JWT_ACCESS_TOKEN = "JAT"
 JWT_MAX_AGE = 24 * 60 * 60
 
 # CORS
-# CORS_ORIGIN_ALLOW_ALL = True
-
-
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_ALL_ORIGINS = True
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = "smtp.gmail.com"
